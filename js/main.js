@@ -1,27 +1,12 @@
 /* ============================================================
    pensionable.ai — main.js
-   Lenis smooth scroll + IntersectionObserver reveal
+   IntersectionObserver reveal animations
    ============================================================ */
 
 (function () {
   'use strict';
 
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  /* ── Smooth Scroll (Lenis) ─────────────────────────────── */
-  if (!prefersReducedMotion && typeof Lenis !== 'undefined') {
-    const lenis = new Lenis({
-      duration: 1.1,
-      easing: function (t) { return Math.min(1, 1.001 - Math.pow(2, -10 * t)); },
-      smooth: true,
-    });
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-  }
 
   /* ── Reveal on Scroll ──────────────────────────────────── */
   if (!prefersReducedMotion) {

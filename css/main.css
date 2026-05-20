@@ -729,10 +729,14 @@ ul {
 
 .stage-section p {
   font-size: 16px;
-  color: var(--ink-sub);
+  color: var(--ink);
   line-height: 1.7;
   margin-bottom: 16px;
+  opacity: 0.72;
 }
+
+/* Suppress double opacity on reveal inside stage-section */
+.stage-section .reveal p { opacity: 1; }
 
 /* ── Footer ────────────────────────────────────────────────── */
 .footer {
