@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo — pensionable.ai</title>
+  <meta name="description" content="A real DB scheme. Every figure traceable to its rule. See the complete Diorama audit trail — 203 deferred-pension values validated within £0.005.">
+  <meta property="og:title" content="Demo — pensionable.ai">
+  <meta property="og:description" content="A real DB scheme. Every figure traceable to its rule.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- ── Navigation ──────────────────────────────────────── -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="wordmark">pensionable<span class="dot">.</span>ai</a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="how-it-works.html" class="nav-link">How it works</a>
+        <a href="demo.html" class="nav-link">Demo</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="contact.html" class="nav-cta">Book a call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── Intro Strip ───────────────────────────────────── -->
+    <div class="intro-strip">
+      <div class="container">
+        <p class="eyebrow reveal">Live audit trail</p>
+        <h1 class="section-headline reveal">A real DB scheme. Every figure traceable to its rule.</h1>
+        <p class="body-text reveal">What you are looking at is the complete audit trail from a live Diorama implementation. Every preserved-retirement and revaluation figure is clickable. Every click opens the full citation chain: the scheme rule, the statute, the workbook cell, and the Python code that produced it.</p>
+        <p class="body-text reveal" style="margin-top: 12px;">203 deferred-pension values validated against the workbook oracle within £0.005. Seven test members. Every excess shape the scheme operates.</p>
+      </div>
+    </div>
+
+    <!-- ── Annotation Cards ───────────────────────────────── -->
+    <section class="section" style="padding-bottom: 0;">
+      <div class="container">
+        <div class="annotation-cards stagger">
+          <div class="annotation-card card--lavender reveal">
+            <p class="annotation-card__label">Click any figure</p>
+            <p class="annotation-card__body">Every monetary value opens a drawer showing the authority chain: deed clause, statute reference, workbook cell, and tolerance-checked oracle match.</p>
+          </div>
+          <div class="annotation-card card--mint reveal">
+            <p class="annotation-card__label">Pass / fail at a glance</p>
+            <p class="annotation-card__body">Tranche-level results are colour-coded. Green rows passed against the workbook oracle. Each fail carries a reason string pointing at the specific open item.</p>
+          </div>
+          <div class="annotation-card card--peach reveal">
+            <p class="annotation-card__label">Oracle comparison</p>
+            <p class="annotation-card__body">Each member shows engine output against the cached workbook value with the exact difference. £0.005 tolerance. Every deviation classified and explained.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Iframe Embed ───────────────────────────────────── -->
+    <section class="section" style="padding-top: 24px;">
+      <div class="container">
+        <div class="demo-frame">
+          <iframe
+            src="demo/onyx-audit-trail.html"
+            title="Onyx Audit Trail — pensionable.ai Diorama"
+            class="demo-iframe">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Bottom CTA ────────────────────────────────────── -->
+    <section class="section--lavender">
+      <div class="cta-section">
+        <div class="container">
+          <h2 class="section-headline reveal">Want to see this on your scheme?</h2>
+          <p class="body-text reveal">Every engagement starts from your actual evidence pack. We do not need a clean starting point.</p>
+          <div class="cta-section__buttons reveal mt-32">
+            <a href="contact.html" class="btn-primary">Book a conversation</a>
+          </div>
+          <p class="cta-secondary reveal">Or email <a href="mailto:hello@pensionable.ai">hello@pensionable.ai</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="wordmark">pensionable<span class="dot">.</span>ai</a>
+        <p class="footer__tagline">Every assumption explicit. Every calculation testable.</p>
+      </div>
+      <nav class="footer__links">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="demo.html">Demo</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer__contact">
+        <a href="mailto:hello@pensionable.ai">hello@pensionable.ai</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 pensionable.ai · All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
