@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="assets/maiaa.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — maiaa.ai</title>
+  <meta name="description" content="Explore our portfolio of websites and digital marketing work.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .portfolio-hero {
+      padding: 140px 64px 60px;
+      text-align: center;
+    }
+    .portfolio-hero h1 {
+      font-size: clamp(44px, 6vw, 80px);
+      font-weight: 900;
+      letter-spacing: -0.045em;
+      line-height: 1.0;
+      margin: 16px 0 20px;
+    }
+    .portfolio-hero p {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.65;
+    }
+
+    .portfolio-filters {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 0 64px 48px;
+    }
+    .filter-btn {
+      font-size: 13px;
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+      padding: 8px 20px;
+      border-radius: 100px;
+      border: 1.5px solid var(--border);
+      color: var(--muted);
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--purple);
+      border-color: var(--purple);
+      color: #fff;
+    }
+
+    .portfolio-page-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      gap: 24px;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 64px 120px;
+    }
+
+    .portfolio-page-card {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      aspect-ratio: 16/10;
+      display: block;
+      border: 1.5px solid var(--border);
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+    .portfolio-page-card:hover {
+      border-color: rgba(108, 71, 255, 0.4);
+      transform: translateY(-4px);
+    }
+    .portfolio-page-card-bg {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s ease;
+    }
+    .portfolio-page-card:hover .portfolio-page-card-bg {
+      transform: scale(1.04);
+    }
+    .portfolio-page-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(16,23,34,0.95) 0%, rgba(16,23,34,0.3) 50%, transparent 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 28px;
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+    .portfolio-page-card:hover .portfolio-page-card-overlay {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .portfolio-page-card-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #C4B5FD;
+      margin-bottom: 8px;
+    }
+    .portfolio-page-card-title {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .portfolio-page-card-desc {
+      font-size: 14px;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 14px;
+      line-height: 1.6;
+    }
+    .portfolio-page-card-cta {
+      font-size: 13px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .portfolio-page-card.hidden { display: none; }
+
+    .portfolio-footer {
+      background: var(--dark);
+      color: #fff;
+      text-align: center;
+      padding: 40px 64px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.4);
+    }
+    .portfolio-footer a {
+      color: rgba(255,255,255,0.6);
+      transition: color 0.15s;
+    }
+    .portfolio-footer a:hover { color: #fff; }
+
+    @media (max-width: 768px) {
+      .portfolio-hero { padding: 120px 24px 40px; }
+      .portfolio-hero p { font-size: 16px; }
+      .portfolio-filters { padding: 0 24px 40px; }
+      .portfolio-page-grid { grid-template-columns: 1fr; padding: 0 24px 80px; }
+      .portfolio-footer { padding: 32px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">maiaa<span>.ai</span></a>
+    <div class="nav-links">
+      <a href="index.html#services" class="nav-link">Services</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="index.html#process" class="nav-link">Process</a>
+      <a href="https://calendar.app.google/mcwL3QfnGBo8TwRH8" target="_blank" rel="noopener" class="btn-dark">Book a Call</a>
+    </div>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#services" class="mobile-menu-link">Services</a>
+    <a href="portfolio.html" class="mobile-menu-link">Portfolio</a>
+    <a href="index.html#process" class="mobile-menu-link">Process</a>
+    <a href="https://calendar.app.google/mcwL3QfnGBo8TwRH8" target="_blank" rel="noopener" class="mobile-menu-link mobile-menu-cta">Book a Call</a>
+  </div>
+
+  <main>
+    <section class="portfolio-hero fade-up">
+      <div class="section-eyebrow">Our Work</div>
+      <h1>Portfolio</h1>
+      <p>Every project is a live, interactive experience. Click through to explore.</p>
+    </section>
+
+    <div class="portfolio-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="landing">Landing Pages</button>
+      <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+      <button class="filter-btn" data-filter="saas">SaaS</button>
+    </div>
+
+    <div class="portfolio-page-grid" id="portfolioGrid">
+
+      <a href="https://dfarquharsoncontracts.co.uk" target="_blank" rel="noopener" class="portfolio-page-card fade-up" data-category="landing">
+        <div class="portfolio-page-card-bg" style="background: url('assets/portfolio/dfc.png') center/cover no-repeat;"></div>
+        <div class="portfolio-page-card-overlay">
+          <span class="portfolio-page-card-badge">Business / Landing Page</span>
+          <h3 class="portfolio-page-card-title">D. Farquharson Contractors</h3>
+          <p class="portfolio-page-card-desc">A professional site for a civil and groundworks contractor, showcasing services, past projects, and expertise.</p>
+          <span class="portfolio-page-card-cta">View Project &rarr;</span>
+        </div>
+      </a>
+
+      <a href="https://wespeaktorobots.ai" target="_blank" rel="noopener" class="portfolio-page-card fade-up" data-category="saas">
+        <div class="portfolio-page-card-bg" style="background: url('assets/portfolio/wstr.png') center/cover no-repeat;"></div>
+        <div class="portfolio-page-card-overlay">
+          <span class="portfolio-page-card-badge">SaaS / AI Consultancy</span>
+          <h3 class="portfolio-page-card-title">We Speak to Robots</h3>
+          <p class="portfolio-page-card-desc">An AI consultancy and auditing business providing tailored AI solutions to help businesses integrate and optimise emerging technology.</p>
+          <span class="portfolio-page-card-cta">View Project &rarr;</span>
+        </div>
+      </a>
+
+      <a href="https://jackcrump.com" target="_blank" rel="noopener" class="portfolio-page-card fade-up" data-category="landing">
+        <div class="portfolio-page-card-bg" style="background: url('assets/portfolio/jcp.png') center/cover no-repeat;"></div>
+        <div class="portfolio-page-card-overlay">
+          <span class="portfolio-page-card-badge">Photography / Portfolio</span>
+          <h3 class="portfolio-page-card-title">Jack Crump Photography</h3>
+          <p class="portfolio-page-card-desc">A sleek photography portfolio showcasing professional work with a clean, image-focused design.</p>
+          <span class="portfolio-page-card-cta">View Project &rarr;</span>
+        </div>
+      </a>
+
+      <a href="https://blueshedsite.github.io/website/" target="_blank" rel="noopener" class="portfolio-page-card fade-up" data-category="landing">
+        <div class="portfolio-page-card-bg" style="background: url('assets/portfolio/blueshed.png') center/cover no-repeat;"></div>
+        <div class="portfolio-page-card-overlay">
+          <span class="portfolio-page-card-badge">Coaching / Personal Development</span>
+          <h3 class="portfolio-page-card-title">The Blue Shed Group</h3>
+          <p class="portfolio-page-card-desc">A global coaching platform helping ambitious professionals develop self-leadership, communication skills, and purpose-driven careers.</p>
+          <span class="portfolio-page-card-cta">View Project &rarr;</span>
+        </div>
+      </a>
+
+      <a href="https://crvmpmaiaa.github.io/BrickingAwesome/" target="_blank" rel="noopener" class="portfolio-page-card fade-up" data-category="landing">
+        <div class="portfolio-page-card-bg" style="background: url('assets/portfolio/bricking.png') center/cover no-repeat;"></div>
+        <div class="portfolio-page-card-overlay">
+          <span class="portfolio-page-card-badge">Skilled Trades / Landing Page</span>
+          <h3 class="portfolio-page-card-title">Brickin' Awesome</h3>
+          <p class="portfolio-page-card-desc">A professional brickwork and pointing specialist serving Wrexham and North Wales, with over 15 years of experience in repointing, repairs, and new builds.</p>
+          <span class="portfolio-page-card-cta">View Project &rarr;</span>
+        </div>
+      </a>
+
+      <a href="https://crvmpmaiaa.github.io/waterloo-abc/" target="_blank" rel="noopener" class="portfolio-page-card fade-up" data-category="landing">
+        <div class="portfolio-page-card-bg" style="background: url('assets/portfolio/wabc.png') center/cover no-repeat;"></div>
+        <div class="portfolio-page-card-overlay">
+          <span class="portfolio-page-card-badge">Sports / Boxing Club</span>
+          <h3 class="portfolio-page-card-title">Waterloo ABC</h3>
+          <p class="portfolio-page-card-desc">A grassroots boxing gym in Liverpool offering affordable training for all ages, including ladies fitness, children's classes, and competition training.</p>
+          <span class="portfolio-page-card-cta">View Project &rarr;</span>
+        </div>
+      </a>
+
+      <a href="https://crvmpmaiaa.github.io/spengali/" target="_blank" rel="noopener" class="portfolio-page-card fade-up" data-category="landing">
+        <div class="portfolio-page-card-bg" style="background: url('assets/portfolio/spengali.png') center/cover no-repeat;"></div>
+        <div class="portfolio-page-card-overlay">
+          <span class="portfolio-page-card-badge">Entertainment / Personal Brand</span>
+          <h3 class="portfolio-page-card-title">Spencer Lynch</h3>
+          <p class="portfolio-page-card-desc">A cinematic portfolio site for a Liverpool-based magician and entertainer, built around bold typography, dark luxury aesthetics, and a scroll-driven showreel.</p>
+          <span class="portfolio-page-card-cta">View Project &rarr;</span>
+        </div>
+      </a>
+
+      <a href="https://crvmpmaiaa.github.io/lemovals/" target="_blank" rel="noopener" class="portfolio-page-card fade-up" data-category="landing">
+        <div class="portfolio-page-card-bg" style="background: url('assets/portfolio/lemovals.png') center/cover no-repeat;"></div>
+        <div class="portfolio-page-card-overlay">
+          <span class="portfolio-page-card-badge">Removals / Landing Page</span>
+          <h3 class="portfolio-page-card-title">Lemovals</h3>
+          <p class="portfolio-page-card-desc">A professional removals and man-with-a-van service with instant quote flow, clear pricing, and a clean mobile-first design.</p>
+          <span class="portfolio-page-card-cta">View Project &rarr;</span>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <footer class="portfolio-footer">
+    <p>&copy; 2026 <a href="index.html">maiaa.ai</a>. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.portfolio-page-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const filter = btn.dataset.filter;
+          cards.forEach(card => {
+            card.classList.toggle('hidden', filter !== 'all' && card.dataset.category !== filter);
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
