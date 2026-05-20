@@ -2,356 +2,240 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" type="image/png" href="assets/maiaa.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>maiaa.ai Profitable Marketing for the AI Generation</title>
-  <meta name="description" content="Full-service digital marketing studio. Websites, SEO, paid ads, digital strategy, and AI consulting from one team.">
-  <meta property="og:title" content="maiaa.ai Profitable Marketing for the AI Generation">
-  <meta property="og:description" content="No jargon. No fluff. Just smart ideas and sharp execution from a team that gets it.">
+  <title>pensionable.ai — Diorama Pension Calculation Engine</title>
+  <meta name="description" content="Diorama turns DB scheme rules, factor tables, and worked examples into structured, auditable, scheme-specific calculation capability. Every assumption explicit. Every calculation testable.">
+  <meta property="og:title" content="pensionable.ai">
+  <meta property="og:description" content="The pension engine that starts from the real evidence pack.">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/chatbot.css">
 </head>
 <body>
 
-  <!-- Nav -->
-  <nav class="nav" id="nav">
-  <a href="index.html" class="nav-logo">maiaa<span>.ai</span></a>
-  <div class="nav-links">
-    <a href="services.html" class="nav-link">Services</a>
-    <a href="portfolio.html" class="nav-link">Portfolio</a>
-    <a href="#process" class="nav-link">Process</a>
-    <a href="about.html" class="nav-link">About</a>
-    <a href="https://calendar.app.google/mcwL3QfnGBo8TwRH8" target="_blank" rel="noopener" class="btn-dark">Book a Call</a>
-  </div>
-  <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-
-  <!-- Mobile menu overlay -->
-  <div class="mobile-menu" id="mobileMenu">
-  <a href="services.html" class="mobile-menu-link">Services</a>
-  <a href="portfolio.html" class="mobile-menu-link">Portfolio</a>
-  <a href="#process" class="mobile-menu-link">Process</a>
-  <a href="about.html" class="mobile-menu-link">About</a>
-  <a href="https://calendar.app.google/mcwL3QfnGBo8TwRH8" target="_blank" rel="noopener" class="mobile-menu-link mobile-menu-cta">Book a Call</a>
-</div>
+  <!-- ── Navigation ──────────────────────────────────────── -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="wordmark">pensionable<span class="dot">.</span>ai</a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="how-it-works.html" class="nav-link">How it works</a>
+        <a href="demo.html" class="nav-link">Demo</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="contact.html" class="nav-cta">Book a call</a>
+      </nav>
+    </div>
+  </header>
 
   <main>
-    <!-- Hero -->
-  <section class="hero" id="hero">
-    <canvas id="gradientCanvas"></canvas>
-    <div class="hero-inner">
-      <div class="hero-eyebrow fade-up">Digital Marketing Studio</div>
-      <h1 class="fade-up" style="transition-delay: 0.08s">
-        Online presence<br>your business <em>deserves.</em>
-      </h1>
-      <p class="hero-sub fade-up" style="transition-delay: 0.18s">More leads, more visibility, more growth.</p>
-<div class="hero-actions fade-up" style="transition-delay: 0.28s">
-        <a href="https://calendar.app.google/mcwL3QfnGBo8TwRH8" target="_blank" rel="noopener" class="btn-hero-primary">Start a Project</a>
-        <a href="portfolio.html" class="btn-hero-secondary">See Our Work</a>
-      </div>
-    </div>
-  </section>
 
-
-    <!-- Statement (pinned shrink) -->
-    <div class="statement-wrap" id="statementWrap">
-      <div class="statement-card" id="statementCard">
-        <div class="statement-body">
-          <p class="statement-text">Sharp design and marketing strategy that bridges the gap between where you are and where you want to be.</p>
-          <p class="statement-sub">Beautiful websites, high-converting ads, and cold outbound that converts in the AI era.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Priority section -->
-    <section class="priority-section">
-      <div class="priority-inner">
-        <div class="priority-badge">Our priority</div>
-        <h2 class="priority-title"><span class="priority-gradient">Results-driven marketing</span><br>built around you.</h2>
-      </div>
-    </section>
-
-    <!-- Bold statements scroller (hidden on mobile, shown above laptop on desktop) -->
-    <section class="statements-bar fade-up statements-bar--desktop">
-      <div class="statements-scroller" id="statementsScroller">
-        <div class="statement-slide active">
-          <h3>Websites live in<br>3 days, not 3 months.</h3>
-          <p>Fixed price, pixel-perfect, no back-and-forth.</p>
-        </div>
-        <div class="statement-slide">
-          <h3>Marketing that drives<br>real revenue.</h3>
-          <p>SEO, paid ads and strategy that compounds over time.</p>
-        </div>
-        <div class="statement-slide">
-          <h3>AI-powered growth<br>that keeps you ahead.</h3>
-          <p>Stay ahead of the curve while competitors catch up.</p>
-        </div>
-      </div>
-      <div class="statements-dots" id="statementsDots">
-        <button class="statements-dot active" data-index="0"></button>
-        <button class="statements-dot" data-index="1"></button>
-        <button class="statements-dot" data-index="2"></button>
-      </div>
-    </section>
-
-    <!-- Niche ticker -->
-    <section class="niche-ticker-section">
-      <div class="niche-ticker-wrap">
-        <div class="niche-ticker" id="nicheTicker">
-          <span class="niche-item">E-commerce &amp; Retail</span>
-          <span class="niche-sep">·</span>
-          <span class="niche-item">Professional Services</span>
-          <span class="niche-sep">·</span>
-          <span class="niche-item">Hospitality &amp; Leisure</span>
-          <span class="niche-sep">·</span>
-          <span class="niche-item">Health &amp; Wellness</span>
-          <span class="niche-sep">·</span>
-          <span class="niche-item">Startups &amp; Scale-ups</span>
-          <span class="niche-sep">·</span>
-          <span class="niche-item">Local Businesses</span>
-          <span class="niche-sep">·</span>
-          <span class="niche-item">Restaurants &amp; Cafés</span>
-          <span class="niche-sep">·</span>
-          <span class="niche-item">Creative Studios</span>
-          <span class="niche-sep">·</span>
+    <!-- ── Hero ──────────────────────────────────────────── -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow reveal">Pension calculation. Rebuilt.</p>
+        <h1 class="hero-headline hero__headline reveal">Every assumption explicit.<br>Every calculation testable.</h1>
+        <p class="hero__sub reveal">Diorama turns scheme rules, factor tables, spreadsheets, and worked examples into structured, deterministic, auditable calculation capability. The actuary stays in control. The audit trail is built in from the start.</p>
+        <div class="hero__ctas stagger">
+          <a href="contact.html" class="btn-primary reveal">Book a conversation</a>
+          <a href="how-it-works.html" class="btn-text reveal">See how it works →</a>
         </div>
       </div>
     </section>
 
-    <!-- Laptop -->
-    <section class="laptop-section" id="niches">
-      <div class="shape shape-cube shape-1"></div>
-      <div class="shape shape-pill shape-2"></div>
-      <div class="shape shape-cube shape-3"></div>
-      <div class="shape shape-pill shape-4"></div>
-      <div class="shape shape-cube shape-5"></div>
-      <div class="shape shape-pill shape-6"></div>
-      <div class="shape shape-cube shape-7"></div>
-      <div class="laptop-scroll-title fade-up">
-        <h2>See what we build<br><em>in action.</em></h2>
-        <p>Premium websites delivered in days, not weeks.</p>
+    <!-- ── Problem ───────────────────────────────────────── -->
+    <section class="section section--dark" id="problem">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow reveal">The old world</p>
+          <h2 class="section-headline reveal">The hard part does not go away.</h2>
+          <p class="body-text reveal mt-16">Even when a platform has reusable functions, standard factor logic, and configurable tables, the hard part does not go away. The team still has to interpret messy scheme rules, reconcile conflicting source material, squeeze unusual benefit structures into someone else's abstraction, bolt on exceptions, and prove the result really matches the scheme's intended behaviour. The scheme still has to live by the system's rules.</p>
+        </div>
+        <div class="pain-cards stagger">
+          <div class="card card--dark reveal">
+            <p class="card-label">Rules that do not fit the table shape</p>
+            <p class="body-text">The platform expected one thing. The scheme did something else. The team spends months finding workarounds.</p>
+          </div>
+          <div class="card card--dark reveal">
+            <p class="card-label">Exceptions that cannot be ignored</p>
+            <p class="body-text">Every complex scheme has them. Most platforms leave them in expensive corners. They still have to be answered.</p>
+          </div>
+          <div class="card card--dark reveal">
+            <p class="card-label">Bespoke patches that accumulate</p>
+            <p class="body-text">The final implementation becomes a pile of overrides built around someone else's abstraction. Hard to maintain. Harder to audit.</p>
+          </div>
+        </div>
       </div>
-      <div class="device-duo-wrap">
-        <div class="laptop-perspective-wrap">
-          <div class="laptop-reveal" id="laptopReveal">
-            <div class="macbook-wrap">
-              <div class="macbook-screen-wrap">
-                <iframe data-src="assets/maiaa-reel-laptop.html" class="macbook-video lazy-iframe" style="border:0;pointer-events:none;"></iframe>
-              </div>
-              <img src="assets/apple-macbookpro16-front.png" class="macbook-frame" alt="MacBook Pro">
+    </section>
+
+    <!-- ── What Diorama Does ──────────────────────────────── -->
+    <section class="section section--lavender" id="product">
+      <div class="container">
+        <div class="grid-55-45">
+          <div>
+            <p class="eyebrow reveal">A different premise</p>
+            <h2 class="section-headline reveal">The engine adapts to the scheme. Not the other way around.</h2>
+            <p class="body-text reveal mt-16">Diorama starts from the actual evidence pack: deeds, rules, amendments, spreadsheets, factor tables, worked examples, prior calculations, admin notes.</p>
+            <p class="body-text reveal mt-16">The source material is the raw input. The target is the exact validated logic the scheme needs.</p>
+          </div>
+          <div class="pills stagger" style="margin-top: 56px;">
+            <div class="pill reveal">
+              <strong>Scheme-specific by construction</strong>
+              Not configured from generic functions. Built from the scheme's actual rules.
+            </div>
+            <div class="pill reveal">
+              <strong>Auditable from day one</strong>
+              Every formula traceable to the specification. Every output testable against worked examples.
+            </div>
+            <div class="pill reveal">
+              <strong>In your code conventions</strong>
+              Artefacts delivered in Python, Excel, or whatever the team already uses. No platform migration required.
             </div>
           </div>
         </div>
-        <div class="phone-mockup">
-          <div class="phone-notch"></div>
-          <div class="phone-screen">
-            <iframe data-src="assets/maiaa-reel-mobile.html" class="lazy-iframe" style="border:0;width:100%;height:100%;pointer-events:none;"></iframe>
+      </div>
+    </section>
+
+    <!-- ── How it Works (preview) ────────────────────────── -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-header section-header--centred">
+          <p class="eyebrow reveal">The process</p>
+          <h2 class="section-headline reveal">Four stages from evidence pack to auditable output.</h2>
+        </div>
+        <div class="stage-cards stagger">
+          <div class="stage-card reveal">
+            <div class="stage-badge">01</div>
+            <h3 class="stage-card__title">Ingest</h3>
+            <p class="stage-card__body">The evidence pack as it actually exists. Rules, amendments, spreadsheets, examples. No pretence that the documents are clean.</p>
+          </div>
+          <div class="stage-card reveal">
+            <div class="stage-badge">02</div>
+            <h3 class="stage-card__title">Structure</h3>
+            <p class="stage-card__body">Frontier AI models produce structured candidates: rule areas, factor references, methodology choices, provenance back to source. Weeks cut to hours.</p>
+          </div>
+          <div class="stage-card reveal">
+            <div class="stage-badge">03</div>
+            <h3 class="stage-card__title">Validate</h3>
+            <p class="stage-card__body">Candidates go through discipline checks. Humans review and approve the basis before anything is implemented.</p>
+          </div>
+          <div class="stage-card reveal">
+            <div class="stage-badge">04</div>
+            <h3 class="stage-card__title">Compute and audit</h3>
+            <p class="stage-card__body">Deterministic runtime. Replay against worked examples with documented tolerances. Auditable outputs in the consumer's own conventions.</p>
+          </div>
+        </div>
+        <div class="stage-cards-footer reveal">
+          <a href="how-it-works.html" class="btn-text">See the full process →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Trust Signals ──────────────────────────────────── -->
+    <section class="section section--dark" id="trust">
+      <div class="container">
+        <div class="section-header section-header--centred">
+          <p class="eyebrow reveal">Built to be defensible</p>
+          <h2 class="section-headline reveal">Five structural answers to the question every serious buyer asks.</h2>
+        </div>
+        <div class="trust-grid stagger">
+          <div class="trust-item reveal">
+            <p class="trust-item__title">The actuary owns the deliverable</p>
+            <p class="trust-item__body">The human directs the engagement, makes the judgement calls, and signs off the answer. Accountability never moves.</p>
+          </div>
+          <div class="trust-item reveal">
+            <p class="trust-item__title">No AI in the runtime path</p>
+            <p class="trust-item__body">The runtime is deterministic. The same inputs produce the same outputs every time. AI assists in building the calculator, not in running it.</p>
+          </div>
+          <div class="trust-item reveal">
+            <p class="trust-item__title">Every output testable</p>
+            <p class="trust-item__body">Formulas are mechanical translations of rule text. A regression harness asserts outputs match worked examples on every rebuild.</p>
+          </div>
+          <div class="trust-item reveal">
+            <p class="trust-item__title">Witness-anchored validation</p>
+            <p class="trust-item__body">Candidates are verified against worked examples with documented tolerances before entering the compute path.</p>
+          </div>
+          <div class="trust-item reveal">
+            <p class="trust-item__title">Personal data never touches the AI</p>
+            <p class="trust-item__body">Anonymisation is built into the pipeline before any AI access. The structuring step sees only structure, not member data.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Bold statements scroller (mobile only, after laptop) -->
-    <section class="statements-bar statements-bar--mobile">
-      <div class="statements-scroller" id="statementsScrollerMobile">
-        <div class="statement-slide active">
-          <h3>Websites live in<br>3 days, not 3 months.</h3>
-          <p>Fixed price, pixel-perfect, no back-and-forth.</p>
+    <!-- ── Who it's For ───────────────────────────────────── -->
+    <section class="section section--peach" id="for-teams">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow reveal">Who this is built for</p>
+          <h2 class="section-headline reveal">For actuaries and the teams who build calculation systems.</h2>
         </div>
-        <div class="statement-slide">
-          <h3>Marketing that drives<br>real revenue.</h3>
-          <p>SEO, paid ads and strategy that compounds over time.</p>
-        </div>
-        <div class="statement-slide">
-          <h3>AI-powered growth<br>that keeps you ahead.</h3>
-          <p>Stay ahead of the curve while competitors catch up.</p>
-        </div>
-      </div>
-      <div class="statements-dots" id="statementsDotsMobile">
-        <button class="statements-dot active" data-index="0"></button>
-        <button class="statements-dot" data-index="1"></button>
-        <button class="statements-dot" data-index="2"></button>
-      </div>
-    </section>
-
-    <div class="mobile-divider"></div>
-
-    <!-- Process -->
-    <section class="process" id="process">
-  <div class="section-eyebrow fade-up">How it works</div>
-  <h2 class="section-title fade-up" style="transition-delay: 0.07s">Simple process.<br>Real results.</h2>
-  <div class="process-grid">
-
-    <div class="process-step ps-deep" data-tilt style="--card-rot: -5deg; transition-delay: 0s">
-      <div class="ps-shine"></div>
-      <div class="ps-icon">💬</div>
-      <div class="step-num">01</div>
-      <h3>Brief</h3>
-      <p>Share your vision. We nail down scope, goals, and what success looks like for you.</p>
-    </div>
-
-    <div class="process-step ps-yellow" data-tilt style="--card-rot: -1.5deg; transition-delay: 0.07s">
-      <div class="ps-shine"></div>
-      <div class="ps-icon">🧭</div>
-      <div class="step-num">02</div>
-      <h3>Strategy</h3>
-      <p>We build a plan — which channels, which tactics, and in what order to move the needle.</p>
-    </div>
-
-    <div class="process-step ps-pink" data-tilt style="--card-rot: 1.5deg; transition-delay: 0.14s">
-      <div class="ps-shine"></div>
-      <div class="ps-icon">⚡</div>
-      <div class="step-num">03</div>
-      <h3>Execute</h3>
-      <p>Fast, clean delivery. Sites, campaigns, content — on time without the back-and-forth.</p>
-    </div>
-
-    <div class="process-step ps-purple" data-tilt style="--card-rot: 5deg; transition-delay: 0.21s">
-      <div class="ps-shine"></div>
-      <div class="ps-icon">📈</div>
-      <div class="step-num">04</div>
-      <h3>Grow</h3>
-      <p>We track what's working, double down on results, and keep improving every month.</p>
-    </div>
-
-  </div>
-</section>
-
-    <!-- Portfolio teaser -->
-    <section class="portfolio-teaser" id="portfolio-teaser">
-      <div class="portfolio-circ-header">
-        <div class="section-eyebrow fade-up">Our work</div>
-        <h2 class="fade-up" style="transition-delay:0.07s">Results you<br>can see.</h2>
-        <a href="portfolio.html" class="btn-fill fade-up" style="transition-delay:0.14s">View Portfolio</a>
-      </div>
-      <div class="portfolio-circ-stage" id="circGalleryStage">
-        <div class="portfolio-circ-ring" id="circGalleryRing">
-          <div class="portfolio-circ-card" data-label="Spencer Lynch" data-sub="Personal Brand">
-            <img src="assets/portfolio/spengali.png" alt="Spencer Lynch" loading="lazy">
+        <div class="grid-2">
+          <div class="reveal">
+            <p class="for-block__label">For actuaries and pension professionals</p>
+            <p class="for-block__intro">Finally, a system that is not asking you to flatten the scheme into a generic box and hope the exceptions survive.</p>
+            <ul class="bullet-list">
+              <li>Fewer hidden assumptions</li>
+              <li>Clearer challenge points in the rule basis</li>
+              <li>Better use of worked examples in validation</li>
+              <li>Faster route from rule understanding to tested outputs</li>
+            </ul>
           </div>
-          <div class="portfolio-circ-card" data-label="Blue Shed" data-sub="Brand & Web">
-            <img src="assets/portfolio/blueshed.png" alt="Blue Shed" loading="lazy">
-          </div>
-          <div class="portfolio-circ-card" data-label="Jack Crump" data-sub="Portfolio">
-            <img src="assets/portfolio/jcp.png" alt="Jack Crump" loading="lazy">
-          </div>
-          <div class="portfolio-circ-card" data-label="Lemovals" data-sub="Local Business">
-            <img src="assets/portfolio/lemovals.png" alt="Lemovals" loading="lazy">
-          </div>
-          <div class="portfolio-circ-card" data-label="WABC" data-sub="Gym">
-            <img src="assets/portfolio/wabc.png" alt="WABC" loading="lazy">
-          </div>
-          <div class="portfolio-circ-card" data-label="WSTR" data-sub="SaaS">
-            <img src="assets/portfolio/wstr.png" alt="WSTR" loading="lazy">
-          </div>
-          <div class="portfolio-circ-card" data-label="Bricking Awesome" data-sub="Local Business">
-            <img src="assets/portfolio/bricking.png" alt="Bricking Awesome" loading="lazy">
+          <div class="reveal">
+            <p class="for-block__label">For developers at consultancies and admin houses</p>
+            <p class="for-block__intro">Stop spending months building bespoke infrastructure around every awkward scheme.</p>
+            <ul class="bullet-list">
+              <li>Less time on interpretation plumbing</li>
+              <li>More time on genuine domain capability</li>
+              <li>New implementations in your existing code conventions</li>
+              <li>Regression harness built in from the start</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- AI Image Generation -->
-    <section class="ai-gen" id="ai-gen">
-      <div class="section-eyebrow fade-up">AI Image & Video</div>
-      <h2 class="ai-gen-title fade-up" style="transition-delay: 0.07s">Stunning AI image &amp; video generation<br>for ad creatives.</h2>
-      <div class="carousel-stage" id="carouselStage">
-        <div class="carousel-ring" id="carouselRing">
-          <div class="carousel-card" data-rot="-15">
-            <img src="https://images.unsplash.com/photo-1684369176170-463e84248b70?auto=format&fit=crop&q=60&w=600" alt="AI generated image">
+    <!-- ── CTA ────────────────────────────────────────────── -->
+    <section class="section--mint" id="contact">
+      <div class="cta-section">
+        <div class="container">
+          <h2 class="section-headline reveal">Ready to see what this looks like on your scheme?</h2>
+          <p class="body-text reveal">Every engagement starts with a conversation about the scheme, the evidence pack, and what the team needs. No generic demos. No off-the-shelf pitch.</p>
+          <div class="cta-section__buttons reveal">
+            <a href="contact.html" class="btn-primary">Book a conversation</a>
+            <a href="demo.html" class="btn-outlined">See the demo</a>
           </div>
-          <div class="carousel-card" data-rot="-8">
-            <img src="https://plus.unsplash.com/premium_photo-1677269465314-d5d2247a0b0c?auto=format&fit=crop&q=60&w=600" alt="AI generated image">
-          </div>
-          <div class="carousel-card" data-rot="5">
-            <img src="https://images.unsplash.com/photo-1524673360092-e07b7ae58845?auto=format&fit=crop&q=60&w=600" alt="AI generated image">
-          </div>
-          <div class="carousel-card" data-rot="12">
-            <img src="https://plus.unsplash.com/premium_photo-1680610653084-6e4886519caf?auto=format&fit=crop&q=60&w=600" alt="AI generated image">
-          </div>
-          <div class="carousel-card" data-rot="-12">
-            <img src="https://plus.unsplash.com/premium_photo-1680608979589-e9349ed066d5?auto=format&fit=crop&q=60&w=600" alt="AI generated image">
-          </div>
-          <div class="carousel-card" data-rot="8">
-            <img src="https://images.unsplash.com/photo-1562575214-da9fcf59b907?auto=format&fit=crop&q=60&w=600" alt="AI generated image">
-          </div>
-          <div class="carousel-card" data-rot="-5">
-            <img src="https://plus.unsplash.com/premium_photo-1676637656210-390da73f4951?auto=format&fit=crop&q=60&w=600" alt="AI generated image">
-          </div>
-          <div class="carousel-card" data-rot="15">
-            <img src="https://images.unsplash.com/photo-1664448003794-2d446c53dcae?auto=format&fit=crop&q=60&w=600" alt="AI generated image">
-          </div>
+          <p class="cta-secondary reveal">Or email us at <a href="mailto:hello@pensionable.ai">hello@pensionable.ai</a></p>
         </div>
-      </div>
-      <div class="ai-gen-pills fade-up" style="transition-delay: 0.14s">
-        <div class="ai-gen-pill ai-pill-yellow"><span>Realistic Results</span><span>Photos that look professionally crafted</span></div>
-        <div class="ai-gen-pill ai-pill-green"><span>Fast Generation</span><span>Turn ideas into images in seconds</span></div>
-        <div class="ai-gen-pill ai-pill-purple"><span>Diverse Styles</span><span>Wide range of artistic options</span></div>
       </div>
     </section>
 
-    <!-- Dark CTA -->
-    <section class="cta-dark">
-  <div class="cta-blob"></div>
-  <div class="cta-inner">
-    <h2 class="fade-up">Ready to grow your<br>business online?</h2>
-    <p class="fade-up" style="transition-delay: 0.1s">No fluff. Just a straight conversation about what's right for you.</p>
-    <a href="https://calendar.app.google/mcwL3QfnGBo8TwRH8" target="_blank" rel="noopener" class="btn-fill fade-up" style="transition-delay: 0.2s">Book a Free Call</a>
-  </div>
-</section>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
-  <script src="js/shader-process.js"></script>
-  <script src="js/card-tilt.js"></script>
-  <script src="js/gradient-cta.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
-  <script src="js/gradient-wave.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- AI Assistant Widget -->
-  <button class="chatbot-trigger" id="chatbotTrigger" aria-label="Open AI assistant">
-    <!-- Chat icon -->
-    <span class="ct-open">
-      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-      </svg>
-    </span>
-    <!-- Close icon -->
-    <span class="ct-close">
-      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round">
-        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-      </svg>
-    </span>
-  </button>
-
-  <div class="chatbot-panel" id="chatbotPanel" role="dialog" aria-label="Maiaa AI assistant">
-    <div class="cb-header">
-      <div class="cb-avatar">🤖</div>
-      <div class="cb-header-text">
-        <h4>Maiaa Assistant</h4>
-        <p>Free SEO, AEO &amp; Ad Copy tools</p>
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="wordmark">pensionable<span class="dot">.</span>ai</a>
+        <p class="footer__tagline">Every assumption explicit. Every calculation testable.</p>
       </div>
-      <div class="cb-status"></div>
+      <nav class="footer__links">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="demo.html">Demo</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer__contact">
+        <a href="mailto:hello@pensionable.ai">hello@pensionable.ai</a>
+      </div>
     </div>
-    <div class="cb-messages" id="cbMessages"></div>
-    <div class="cb-input-wrap">
-      <textarea class="cb-input" id="cbInput" rows="1" placeholder="Type a message or pick a tool…"></textarea>
-      <button class="cb-send" id="cbSend" aria-label="Send">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
-        </svg>
-      </button>
+    <div class="container footer__bottom">
+      <p>© 2026 pensionable.ai · All rights reserved</p>
     </div>
-  </div>
+  </footer>
 
-  <script src="js/chatbot.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
