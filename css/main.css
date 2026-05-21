@@ -7,17 +7,17 @@
 /* ── Design Tokens ─────────────────────────────────────────── */
 :root {
   --white:    #ffffff;
-  --ink:      #1a1a2e;
-  --ink-sub:  rgba(26, 26, 46, 0.60);
-  --ink-dim:  rgba(26, 26, 46, 0.38);
-  --rule:     rgba(26, 26, 46, 0.08);
-  --purple:   #6C47FF;
-  --dark:     #1a1a2e;
+  --ink:      #1E2939;
+  --ink-sub:  rgba(30, 41, 57, 0.60);
+  --ink-dim:  rgba(30, 41, 57, 0.38);
+  --rule:     rgba(30, 41, 57, 0.08);
+  --purple:   #3FBAD4;
+  --dark:     #051966;
 
-  --lavender: #e0dbff;
-  --mint:     #c8f5e0;
-  --peach:    #ffd8b0;
-  --blue:     #d0eaff;
+  --lavender: #d4f0f7;
+  --mint:     #e6eaf8;
+  --peach:    #cce8f0;
+  --blue:     #ddf4f9;
   --yellow:   #fef9c3;
   --pink:     #ffd6ea;
 
@@ -232,7 +232,7 @@ ul { list-style: none; }
 /* ── Hero ──────────────────────────────────────────────────── */
 .hero {
   padding: 120px 0 108px;
-  background: #0d0b1a;
+  background: #051966;
   color: #fff;
   position: relative;
   overflow: hidden;
@@ -325,6 +325,7 @@ ul { list-style: none; }
   padding: 88px 0 80px;
   background: var(--dark);
   color: #fff;
+  /* dark = #051966 navy */
   position: relative;
   overflow: hidden;
 }

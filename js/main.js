@@ -28,7 +28,7 @@
         'const float majorLineFrequency = 5.0;',
         'const float minorLineFrequency = 1.0;',
         'const float scale = 5.0;',
-        'const vec4 lineColor = vec4(0.4, 0.2, 0.8, 1.0);',
+        'const vec4 lineColor = vec4(0.25, 0.73, 0.83, 1.0);',
         'const float minLineWidth = 0.01;',
         'const float maxLineWidth = 0.2;',
         'const float lineSpeed = 1.0 * overallSpeed;',
@@ -67,8 +67,8 @@
         '  space.x += random(space.y * warpFrequency + iTime * warpSpeed + 2.0) * warpAmplitude * horizontalFade;',
 
         '  vec4 lines = vec4(0.0);',
-        '  vec4 bgColor1 = vec4(0.07, 0.05, 0.18, 1.0);',
-        '  vec4 bgColor2 = vec4(0.18, 0.06, 0.30, 1.0);',
+        '  vec4 bgColor1 = vec4(0.02, 0.09, 0.40, 1.0);',
+        '  vec4 bgColor2 = vec4(0.02, 0.14, 0.50, 1.0);',
 
         '  for(int l = 0; l < linesPerGroup; l++) {',
         '    float normalizedLineIndex = float(l) / float(linesPerGroup);',
