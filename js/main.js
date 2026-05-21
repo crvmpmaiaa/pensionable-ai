@@ -189,7 +189,7 @@
 
   if (slides.length && bar) {
     var current  = 0;
-    var DURATION = 8000;
+    var DURATION = 4500;
     var timer    = null;
     var startTs  = null;
     var rafId    = null;

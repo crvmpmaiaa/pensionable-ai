@@ -7,16 +7,17 @@
 /* ── Design Tokens ─────────────────────────────────────────── */
 :root {
   --white:    #ffffff;
-  --ink:      #1E2939;
-  --ink-sub:  rgba(30, 41, 57, 0.60);
-  --ink-dim:  rgba(30, 41, 57, 0.38);
-  --rule:     rgba(30, 41, 57, 0.08);
-  --purple:   #3FBAD4;
-  --dark:     #051966;
+  --ink:      #051966;
+  --ink-sub:  rgba(5, 25, 102, 0.60);
+  --ink-dim:  rgba(5, 25, 102, 0.38);
+  --rule:     rgba(5, 25, 102, 0.08);
+  --purple:   #C840DE;   /* logo hexagon magenta */
+  --teal:     #3FBAD4;   /* logo .ai teal */
+  --dark:     #051966;   /* logo navy */
 
-  --lavender: #d4f0f7;
-  --mint:     #e6eaf8;
-  --peach:    #cce8f0;
+  --lavender: #f5d6fb;
+  --mint:     #d4f0f7;
+  --peach:    #e6eaf8;
   --blue:     #ddf4f9;
   --yellow:   #fef9c3;
   --pink:     #ffd6ea;
@@ -86,7 +87,8 @@ ul { list-style: none; }
   color: var(--ink);
   flex-shrink: 0;
 }
-.wordmark .dot { color: var(--purple); }
+.wordmark .dot { color: var(--teal); }
+.wordmark .ai  { color: var(--teal); }
 
 .nav-links {
   display: flex;
@@ -114,7 +116,7 @@ ul { list-style: none; }
   font-weight: 700;
   letter-spacing: -0.01em;
   color: #fff;
-  background: var(--purple);
+  background: var(--teal);
   padding: 8px 18px;
   border-radius: 999px;
   margin-left: 8px;
@@ -180,7 +182,7 @@ ul { list-style: none; }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--purple);
+  background: var(--teal);
   color: #fff;
   font-size: 15px;
   font-weight: 700;
@@ -188,13 +190,13 @@ ul { list-style: none; }
   padding: 14px 28px;
   border-radius: 999px;
   transition: opacity 150ms, transform 150ms, box-shadow 150ms;
-  box-shadow: 0 2px 12px rgba(108, 71, 255, 0.32);
+  box-shadow: 0 2px 12px rgba(63, 186, 212, 0.32);
 }
 .btn-primary:hover {
   opacity: 0.88;
   transform: translateY(-1px);
   color: #fff;
-  box-shadow: 0 6px 24px rgba(108, 71, 255, 0.40);
+  box-shadow: 0 6px 24px rgba(63, 186, 212, 0.42);
 }
 
 .btn-outlined {
@@ -569,7 +571,7 @@ ul { list-style: none; }
 }
 
 .trust-dot.is-active {
-  background: var(--purple);
+  background: var(--teal);
   transform: scale(1.3);
 }
 
@@ -584,7 +586,7 @@ ul { list-style: none; }
 .trust-progress__bar {
   height: 100%;
   width: 0%;
-  background: var(--purple);
+  background: var(--teal);
   border-radius: 2px;
   transition: width linear;
 }
