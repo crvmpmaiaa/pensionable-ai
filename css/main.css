@@ -246,6 +246,7 @@ ul { list-style: none; }
   height: 100%;
   display: block;
   pointer-events: none;
+  opacity: 0.45;
 }
 
 .hero .container { position: relative; z-index: 2; }
