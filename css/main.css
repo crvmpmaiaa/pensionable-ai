@@ -8,17 +8,17 @@
 :root {
   --white:    #ffffff;
   --ink:      #051966;
-  --ink-sub:  rgba(5, 25, 102, 0.60);
-  --ink-dim:  rgba(5, 25, 102, 0.38);
-  --rule:     rgba(5, 25, 102, 0.08);
-  --purple:   #C840DE;   /* logo hexagon magenta */
-  --teal:     #3FBAD4;   /* logo .ai teal */
-  --dark:     #051966;   /* logo navy */
+  --ink-sub:  rgba(5, 25, 102, 0.58);
+  --ink-dim:  rgba(5, 25, 102, 0.35);
+  --rule:     rgba(5, 25, 102, 0.09);
+  --purple:   #3FBAD4;   /* teal — used everywhere as accent */
+  --teal:     #3FBAD4;
+  --dark:     #051966;   /* navy */
 
-  --lavender: #f5d6fb;
+  --lavender: #e8f8fc;
   --mint:     #d4f0f7;
-  --peach:    #e6eaf8;
-  --blue:     #ddf4f9;
+  --peach:    #eaf2fb;
+  --blue:     #f0fafd;
   --yellow:   #fef9c3;
   --pink:     #ffd6ea;
 

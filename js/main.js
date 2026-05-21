@@ -28,7 +28,7 @@
         'const float majorLineFrequency = 5.0;',
         'const float minorLineFrequency = 1.0;',
         'const float scale = 5.0;',
-        'const vec4 lineColor = vec4(0.25, 0.73, 0.83, 1.0);',
+        'const vec4 lineColor = vec4(0.25, 0.73, 0.83, 0.8);',
         'const float minLineWidth = 0.01;',
         'const float maxLineWidth = 0.2;',
         'const float lineSpeed = 1.0 * overallSpeed;',
