@@ -105,35 +105,50 @@
           <p class="eyebrow reveal">Built to be defensible</p>
           <h2 class="section-headline reveal">Five answers to the question every serious buyer asks.</h2>
         </div>
-        <div class="trust-grid stagger">
-          <div class="trust-item reveal">
-            <span class="trust-item__num">01</span>
-            <p class="trust-item__title">The Scheme Actuary owns the deliverable</p>
-            <p class="trust-item__body">The actuary reviews the benefit specification, makes the judgement calls, and signs off the output. Professional accountability does not move.</p>
+
+        <div class="trust-scroller reveal" aria-live="polite">
+          <div class="trust-slides">
+            <div class="trust-slide is-active">
+              <span class="trust-slide__num">01 / 05</span>
+              <h3 class="trust-slide__title">The Scheme Actuary owns the deliverable</h3>
+              <p class="trust-slide__body">The actuary reviews the benefit specification, makes the judgement calls, and signs off the output. Professional accountability does not move.</p>
+            </div>
+            <div class="trust-slide">
+              <span class="trust-slide__num">02 / 05</span>
+              <h3 class="trust-slide__title">No AI in the calculation runtime</h3>
+              <p class="trust-slide__body">The runtime is deterministic. The same inputs produce the same outputs every time. AI accelerates structuring — it plays no part in the calculation itself.</p>
+            </div>
+            <div class="trust-slide">
+              <span class="trust-slide__num">03 / 05</span>
+              <h3 class="trust-slide__title">Every output testable against worked examples</h3>
+              <p class="trust-slide__body">A regression harness asserts outputs match worked examples on every rebuild. Test failure surfaces before anything reaches the member population.</p>
+            </div>
+            <div class="trust-slide">
+              <span class="trust-slide__num">04 / 05</span>
+              <h3 class="trust-slide__title">Provenance back to the deed</h3>
+              <p class="trust-slide__body">Every methodology choice and calculation parameter traces back to the specific deed clause or statutory provision that governs it.</p>
+            </div>
+            <div class="trust-slide">
+              <span class="trust-slide__num">05 / 05</span>
+              <h3 class="trust-slide__title">Member data never touches the AI</h3>
+              <p class="trust-slide__body">Anonymisation is built into the pipeline before any AI access. The structuring step sees only scheme structure and rule text, not member records.</p>
+            </div>
           </div>
-          <div class="trust-item reveal">
-            <span class="trust-item__num">02</span>
-            <p class="trust-item__title">No AI in the calculation runtime</p>
-            <p class="trust-item__body">The runtime is deterministic. The same inputs produce the same outputs every time. AI accelerates structuring — it plays no part in the calculation itself.</p>
-          </div>
-          <div class="trust-item reveal">
-            <span class="trust-item__num">03</span>
-            <p class="trust-item__title">Every output testable against worked examples</p>
-            <p class="trust-item__body">A regression harness asserts outputs match worked examples on every rebuild. Test failure surfaces before anything reaches the member population.</p>
-          </div>
-          <div class="trust-item reveal">
-            <span class="trust-item__num">04</span>
-            <p class="trust-item__title">Provenance back to the deed</p>
-            <p class="trust-item__body">Every methodology choice and calculation parameter traces back to the specific deed clause or statutory provision that governs it.</p>
-          </div>
-          <div class="trust-item trust-item--wide reveal">
-            <span class="trust-item__num">05</span>
-            <div class="trust-item__content">
-              <p class="trust-item__title">Member data never touches the AI</p>
-              <p class="trust-item__body">Anonymisation is built into the pipeline before any AI access. The structuring step sees only scheme structure and rule text, not member records.</p>
+
+          <div class="trust-nav">
+            <div class="trust-dots">
+              <button class="trust-dot is-active" aria-label="Answer 1"></button>
+              <button class="trust-dot" aria-label="Answer 2"></button>
+              <button class="trust-dot" aria-label="Answer 3"></button>
+              <button class="trust-dot" aria-label="Answer 4"></button>
+              <button class="trust-dot" aria-label="Answer 5"></button>
+            </div>
+            <div class="trust-progress">
+              <div class="trust-progress__bar"></div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 

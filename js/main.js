@@ -40,6 +40,55 @@
     });
   }
 
+  /* ── Trust Scroller ────────────────────────────────────── */
+  var slides = document.querySelectorAll('.trust-slide');
+  var dots   = document.querySelectorAll('.trust-dot');
+  var bar    = document.querySelector('.trust-progress__bar');
+
+  if (slides.length && bar) {
+    var current  = 0;
+    var DURATION = 8000;
+    var timer    = null;
+    var startTs  = null;
+    var rafId    = null;
+
+    function goTo(index) {
+      slides[current].classList.remove('is-active');
+      dots[current].classList.remove('is-active');
+      current = (index + slides.length) % slides.length;
+      slides[current].classList.add('is-active');
+      dots[current].classList.add('is-active');
+      startProgress();
+    }
+
+    function startProgress() {
+      cancelAnimationFrame(rafId);
+      clearTimeout(timer);
+      bar.style.transition = 'none';
+      bar.style.width = '0%';
+      startTs = null;
+
+      rafId = requestAnimationFrame(function tick(ts) {
+        if (!startTs) startTs = ts;
+        var elapsed = ts - startTs;
+        var pct = Math.min((elapsed / DURATION) * 100, 100);
+        bar.style.transition = 'none';
+        bar.style.width = pct + '%';
+        if (elapsed < DURATION) {
+          rafId = requestAnimationFrame(tick);
+        } else {
+          goTo(current + 1);
+        }
+      });
+    }
+
+    dots.forEach(function (dot, i) {
+      dot.addEventListener('click', function () { goTo(i); });
+    });
+
+    startProgress();
+  }
+
   /* ── Active Nav Link ───────────────────────────────────── */
   var path = window.location.pathname;
   var filename = path.split('/').pop() || 'index.html';
