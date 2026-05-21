@@ -41,6 +41,24 @@
           <a href="contact.html" class="btn-primary reveal">Book a conversation</a>
           <a href="how-it-works.html" class="btn-text reveal">See how it works →</a>
         </div>
+        <div class="stat-strip reveal" style="margin-top: 56px;">
+          <div class="stat-strip__item">
+            <div class="stat-strip__value">203</div>
+            <div class="stat-strip__label">Values validated</div>
+          </div>
+          <div class="stat-strip__item">
+            <div class="stat-strip__value">£0.005</div>
+            <div class="stat-strip__label">Tolerance</div>
+          </div>
+          <div class="stat-strip__item">
+            <div class="stat-strip__value">Weeks → hours</div>
+            <div class="stat-strip__label">Deed to specification</div>
+          </div>
+          <div class="stat-strip__item">
+            <div class="stat-strip__value">Zero</div>
+            <div class="stat-strip__label">AI in the calculation path</div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -54,14 +72,17 @@
         </div>
         <div class="pain-cards stagger">
           <div class="card card--dark reveal">
+            <span class="pain-card-number">01</span>
             <p class="card-label">Benefit specifications that take weeks</p>
             <p class="body-text">Turning deed language into structured calculation logic is manual, slow, and heavily dependent on the individuals who know the scheme. When they leave, the knowledge goes with them.</p>
           </div>
           <div class="card card--dark reveal">
+            <span class="pain-card-number">02</span>
             <p class="card-label">Audit trails built after the fact</p>
             <p class="body-text">Most implementations produce the calculation first and the documentation later. When the Scheme Actuary needs to certify the output or an insurer wants to verify the methodology, the trail is incomplete.</p>
           </div>
           <div class="card card--dark reveal">
+            <span class="pain-card-number">03</span>
             <p class="card-label">Exceptions that never fit the platform</p>
             <p class="body-text">Every complex scheme has benefit categories, historical limits, and GMP-layer logic that sits outside the standard module. The team spends months in workarounds that become impossible to maintain or explain.</p>
           </div>
@@ -105,25 +126,25 @@
           <h2 class="section-headline reveal">Four stages from evidence pack to auditable output.</h2>
         </div>
         <div class="stage-cards stagger">
-          <div class="stage-card reveal">
+          <div class="stage-card stage-card--lavender reveal">
             <div class="stage-badge">01</div>
             <h3 class="stage-card__title">Ingest</h3>
-            <p class="stage-card__body">The evidence pack as it actually exists. Trust Deed and Rules, interim deeds, amendments, worked examples, reconciliation spreadsheets. No pretence that the documents are clean.</p>
+            <p class="stage-card__body">Trust Deed and Rules as amended, interim deeds, factor tables, worked examples, reconciliation spreadsheets. No pretence that the documents are clean.</p>
           </div>
-          <div class="stage-card reveal">
+          <div class="stage-card stage-card--mint reveal">
             <div class="stage-badge">02</div>
             <h3 class="stage-card__title">Structure</h3>
-            <p class="stage-card__body">Frontier AI models produce structured candidates: typed rule objects, factor table extracts, methodology choices, provenance back to source. Weeks of interpretation cut to hours of structured output ready for human review.</p>
+            <p class="stage-card__body">Frontier AI models produce structured candidates: typed rule objects, factor references, methodology choices, provenance to source. Weeks of interpretation cut to hours.</p>
           </div>
-          <div class="stage-card reveal">
+          <div class="stage-card stage-card--peach reveal">
             <div class="stage-badge">03</div>
             <h3 class="stage-card__title">Validate</h3>
-            <p class="stage-card__body">Candidates go through discipline checks. The Scheme Actuary reviews the structured basis and approves it. Nothing enters the compute path without sign-off.</p>
+            <p class="stage-card__body">Candidates go through discipline checks. The Scheme Actuary reviews the benefit specification and approves it. Nothing enters the compute path without sign-off.</p>
           </div>
-          <div class="stage-card reveal">
+          <div class="stage-card stage-card--blue reveal">
             <div class="stage-badge">04</div>
             <h3 class="stage-card__title">Compute and audit</h3>
-            <p class="stage-card__body">Deterministic runtime. No AI in the money path. Outputs replay against worked examples with documented tolerances on every rebuild. Audit trail included as standard.</p>
+            <p class="stage-card__body">Deterministic runtime. No AI in the calculation path. Outputs replay against worked examples with documented tolerances on every rebuild.</p>
           </div>
         </div>
         <div class="stage-cards-footer reveal">
@@ -141,22 +162,27 @@
         </div>
         <div class="trust-grid stagger">
           <div class="trust-item reveal">
+            <p class="trust-item__number">01</p>
             <p class="trust-item__title">The Scheme Actuary owns the deliverable</p>
             <p class="trust-item__body">The actuary directs the engagement, reviews the benefit specification, makes the judgement calls, and signs off the output. Professional accountability does not move.</p>
           </div>
           <div class="trust-item reveal">
+            <p class="trust-item__number">02</p>
             <p class="trust-item__title">No AI in the calculation runtime</p>
             <p class="trust-item__body">The runtime is deterministic. The same inputs produce the same outputs every time. AI accelerates the structuring of scheme material — it plays no part in the calculation itself.</p>
           </div>
           <div class="trust-item reveal">
+            <p class="trust-item__number">03</p>
             <p class="trust-item__title">Every output testable against worked examples</p>
             <p class="trust-item__body">Formulas are mechanical translations of rule text. A regression harness asserts outputs match worked examples on every rebuild. Test failure surfaces before anything ships.</p>
           </div>
           <div class="trust-item reveal">
+            <p class="trust-item__number">04</p>
             <p class="trust-item__title">Provenance back to the deed</p>
             <p class="trust-item__body">Every methodology choice, every factor reference, every calculation parameter traces back to the specific deed clause or statutory provision that governs it.</p>
           </div>
           <div class="trust-item reveal">
+            <p class="trust-item__number">05</p>
             <p class="trust-item__title">Member data never touches the AI</p>
             <p class="trust-item__body">Anonymisation is built into the pipeline before any AI access. The structuring step sees only scheme structure and rule text, not member records.</p>
           </div>
@@ -171,10 +197,10 @@
           <p class="eyebrow reveal">Who this is built for</p>
           <h2 class="section-headline reveal">For the teams who build and own DB calculation systems.</h2>
         </div>
-        <div class="grid-2">
-          <div class="reveal">
+        <div class="for-grid stagger">
+          <div class="for-block reveal">
             <p class="for-block__label">For actuaries and pension professionals</p>
-            <p class="for-block__intro">A system that produces calculation logic you can actually review, challenge, and certify — rather than one that asks you to trust an output you cannot fully trace.</p>
+            <p class="for-block__intro" style="margin-top: 10px;">A system that produces calculation logic you can actually review, challenge, and certify — rather than one that asks you to trust an output you cannot fully trace.</p>
             <ul class="bullet-list">
               <li>Benefit specification produced from the deed, not from a generic template</li>
               <li>Clear provenance at every decision point for Scheme Actuary review</li>
@@ -182,9 +208,9 @@
               <li>Audit trail that holds up under TPR scrutiny and insurer due diligence</li>
             </ul>
           </div>
-          <div class="reveal">
+          <div class="for-block reveal">
             <p class="for-block__label">For developers at consultancies and administration houses</p>
-            <p class="for-block__intro">Stop spending months in benefit specification and bespoke interpretation plumbing on every new scheme engagement.</p>
+            <p class="for-block__intro" style="margin-top: 10px;">Stop spending months in benefit specification and bespoke interpretation plumbing on every new scheme engagement.</p>
             <ul class="bullet-list">
               <li>Structured calculation specification ready for implementation review</li>
               <li>Scheme-specific logic encoded from the source material, not approximated</li>
