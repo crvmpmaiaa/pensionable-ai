@@ -251,9 +251,10 @@ ul { list-style: none; }
 .hero .container { position: relative; z-index: 2; }
 
 .hero__headline {
-  max-width: 680px;
+  max-width: 900px;
   margin: 0 auto 28px;
   color: #fff;
+  white-space: nowrap;
 }
 
 .hero__sub {
