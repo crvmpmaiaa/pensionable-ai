@@ -41,7 +41,7 @@
           <a href="contact.html" class="btn-primary reveal">Book a conversation</a>
           <a href="how-it-works.html" class="btn-text reveal">See how it works →</a>
         </div>
-        <div class="stat-strip reveal" style="margin-top: 56px;">
+        <div class="stat-strip reveal">
           <div class="stat-strip__item">
             <div class="stat-strip__value">203</div>
             <div class="stat-strip__label">Values validated</div>
@@ -68,23 +68,23 @@
         <div class="section-header">
           <p class="eyebrow reveal">The old world</p>
           <h2 class="section-headline reveal">The interpretation problem does not go away.</h2>
-          <p class="body-text reveal mt-16">Even with a capable administration system, the hard part remains: interpreting messy deed documents, reconciling conflicting amendments, squeezing unusual benefit structures into someone else's abstraction, and then producing an audit trail that would satisfy TPR, an insurer, or a court. The team carries that burden on every scheme, on every project cycle.</p>
+          <p class="body-text reveal mt-16">Even with a capable administration system, the hard part remains: interpreting messy deed documents, reconciling conflicting amendments, squeezing unusual benefit structures into someone else's abstraction, and producing an audit trail that would satisfy TPR, an insurer, or a court.</p>
         </div>
         <div class="pain-cards stagger">
-          <div class="card card--dark reveal">
-            <span class="pain-card-number">01</span>
-            <p class="card-label">Benefit specifications that take weeks</p>
-            <p class="body-text">Turning deed language into structured calculation logic is manual, slow, and heavily dependent on the individuals who know the scheme. When they leave, the knowledge goes with them.</p>
+          <div class="pain-card reveal">
+            <span class="pain-card__num">01</span>
+            <p class="pain-card__title">Benefit specifications that take weeks</p>
+            <p class="pain-card__body">Turning deed language into structured calculation logic is manual, slow, and heavily dependent on individuals who know the scheme. When they leave, the knowledge goes with them.</p>
           </div>
-          <div class="card card--dark reveal">
-            <span class="pain-card-number">02</span>
-            <p class="card-label">Audit trails built after the fact</p>
-            <p class="body-text">Most implementations produce the calculation first and the documentation later. When the Scheme Actuary needs to certify the output or an insurer wants to verify the methodology, the trail is incomplete.</p>
+          <div class="pain-card reveal">
+            <span class="pain-card__num">02</span>
+            <p class="pain-card__title">Audit trails built after the fact</p>
+            <p class="pain-card__body">Most implementations produce the calculation first and the documentation later. When the Scheme Actuary needs to certify or an insurer wants to verify, the trail is incomplete.</p>
           </div>
-          <div class="card card--dark reveal">
-            <span class="pain-card-number">03</span>
-            <p class="card-label">Exceptions that never fit the platform</p>
-            <p class="body-text">Every complex scheme has benefit categories, historical limits, and GMP-layer logic that sits outside the standard module. The team spends months in workarounds that become impossible to maintain or explain.</p>
+          <div class="pain-card reveal">
+            <span class="pain-card__num">03</span>
+            <p class="pain-card__title">Exceptions that never fit the platform</p>
+            <p class="pain-card__body">Every complex scheme has benefit categories, historical limits, and GMP-layer logic that sits outside the standard module. Months in workarounds that become impossible to maintain or explain.</p>
           </div>
         </div>
       </div>
@@ -100,7 +100,7 @@
             <p class="body-text reveal mt-16">Diorama starts from the actual evidence pack: deeds as amended, interim deeds, factor tables, worked examples, reconciliation spreadsheets, prior calculations. The source material is the input. The target is a scheme-specific calculation specification your Scheme Actuary can review, approve, and stand behind.</p>
             <p class="body-text reveal mt-16">The Scheme Actuary remains the professional signatory. Diorama is the calculation workbench.</p>
           </div>
-          <div class="pills stagger" style="margin-top: 56px;">
+          <div class="pills stagger" style="margin-top: 48px;">
             <div class="pill reveal">
               <strong>Built from your scheme's rules</strong>
               Not configured from generic functions. Derived directly from the Trust Deed and Rules, with provenance back to source at every step.
@@ -162,27 +162,27 @@
         </div>
         <div class="trust-grid stagger">
           <div class="trust-item reveal">
-            <p class="trust-item__number">01</p>
+            <span class="trust-item__num">01</span>
             <p class="trust-item__title">The Scheme Actuary owns the deliverable</p>
             <p class="trust-item__body">The actuary directs the engagement, reviews the benefit specification, makes the judgement calls, and signs off the output. Professional accountability does not move.</p>
           </div>
           <div class="trust-item reveal">
-            <p class="trust-item__number">02</p>
+            <span class="trust-item__num">02</span>
             <p class="trust-item__title">No AI in the calculation runtime</p>
             <p class="trust-item__body">The runtime is deterministic. The same inputs produce the same outputs every time. AI accelerates the structuring of scheme material — it plays no part in the calculation itself.</p>
           </div>
           <div class="trust-item reveal">
-            <p class="trust-item__number">03</p>
+            <span class="trust-item__num">03</span>
             <p class="trust-item__title">Every output testable against worked examples</p>
             <p class="trust-item__body">Formulas are mechanical translations of rule text. A regression harness asserts outputs match worked examples on every rebuild. Test failure surfaces before anything ships.</p>
           </div>
           <div class="trust-item reveal">
-            <p class="trust-item__number">04</p>
+            <span class="trust-item__num">04</span>
             <p class="trust-item__title">Provenance back to the deed</p>
             <p class="trust-item__body">Every methodology choice, every factor reference, every calculation parameter traces back to the specific deed clause or statutory provision that governs it.</p>
           </div>
           <div class="trust-item reveal">
-            <p class="trust-item__number">05</p>
+            <span class="trust-item__num">05</span>
             <p class="trust-item__title">Member data never touches the AI</p>
             <p class="trust-item__body">Anonymisation is built into the pipeline before any AI access. The structuring step sees only scheme structure and rule text, not member records.</p>
           </div>
@@ -200,7 +200,7 @@
         <div class="for-grid stagger">
           <div class="for-block reveal">
             <p class="for-block__label">For actuaries and pension professionals</p>
-            <p class="for-block__intro" style="margin-top: 10px;">A system that produces calculation logic you can actually review, challenge, and certify — rather than one that asks you to trust an output you cannot fully trace.</p>
+            <p class="for-block__intro">A system that produces calculation logic you can actually review, challenge, and certify — rather than one that asks you to trust an output you cannot fully trace.</p>
             <ul class="bullet-list">
               <li>Benefit specification produced from the deed, not from a generic template</li>
               <li>Clear provenance at every decision point for Scheme Actuary review</li>
@@ -210,7 +210,7 @@
           </div>
           <div class="for-block reveal">
             <p class="for-block__label">For developers at consultancies and administration houses</p>
-            <p class="for-block__intro" style="margin-top: 10px;">Stop spending months in benefit specification and bespoke interpretation plumbing on every new scheme engagement.</p>
+            <p class="for-block__intro">Stop spending months in benefit specification and bespoke interpretation plumbing on every new scheme engagement.</p>
             <ul class="bullet-list">
               <li>Structured calculation specification ready for implementation review</li>
               <li>Scheme-specific logic encoded from the source material, not approximated</li>
